@@ -1,0 +1,13 @@
+{
+  "name": "tezos-place",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/d4hines/tezos-place.git",
+  "author": "Daniel Hines <d4hines@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@oxheadalpha/tznft": "^7.3.0",
+    "@taquito/utils": "^16.1.2",
+    "prettier": "^2.8.8"
+  }
+}

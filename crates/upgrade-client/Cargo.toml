@@ -1,0 +1,28 @@
+# SPDX-FileCopyrightText: 2023 TriliTech <contact@trili.tech>
+#
+# SPDX-License-Identifier: MIT
+
+[package]
+name = "upgrade-client"
+version = "0.1.0"
+edition = "2021"
+authors = ["TriliTech <contact@trili.tech>"]
+include = [
+  "build.rs",
+  "src/*",
+  "../installer_kernel/src/*"
+]
+
+[[bin]]
+name = "upgrade-client"
+path = "src/main.rs"
+
+[dependencies]
+tezos-smart-rollup = {path = "../kernel_sdk/sdk"}
+tezos_data_encoding = { version = "0.4" }
+tezos_data_encoding_derive = { version = "0.4" }
+clap = { version = "4.1", features = ["derive"]}
+tezos_crypto_rs = { version = "0.4", default-features = false }
+blst = {version = "0.3.10", features = ["portable"]}
+hex = {version = "0.4"}
+thiserror = {version = "1.0"}

@@ -1,0 +1,28 @@
+<head>
+	<title>Place</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<meta name="description" content="An online pixel canvas inspired by r/place.">
+	<meta name="keywords" content="r/place, place, game, golang, canvas">
+	<script defer data-domain="pixel-war.rollups.dev" src="https://plausible.io/js/script.js"></script>
+    <link rel="stylesheet" href="./src/style.css">	
+</head>
+
+<body>
+	<input class="modal-state" id="modal-1" type="checkbox" checked />
+	<div class="modal">
+	  <label class="modal__bg" for="modal-1"></label>
+	  <div class="modal__inner">
+	    <label class="modal__close" for="modal-1"></label>
+	    <h2>Caution! Possibly NSFW!</h2>
+		<img src="https://i.imgur.com/HnrkBwB.gif" alt="" />
+	    <p>This is a public canvas, and I can't take responsibility for the degens of the internet. Sensitive eyes should enjoy the cute cat gif above...</p>
+	    <br/>	
+		<p>Still want to play? Here are the steps:</p>
+		<p><strong>Step 1:</strong> Enter your Twitter handle here: <input id="twitter-handle" type="text"></p>
+		<p><strong>Step 2:</strong> Attest your in-game handle on Twitter by <a id="attest" href="">clicking here</a>.</p>
+		<p><strong>Step 3:</strong> Click here to <a id="enter" href="/desktop.html">enter the Pixel War</a>!</p>
+	  </div>
+	</div>
+	<script type="module" src="/src/prelude.ts"></script>
+</body>
+</html>

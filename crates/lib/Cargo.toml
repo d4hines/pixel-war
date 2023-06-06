@@ -1,0 +1,32 @@
+[package]
+name = "lib"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+image = "0.23.14"
+tezos-smart-rollup = {path = "../kernel_sdk/sdk"}
+tezos_data_encoding = "0.4.4"
+tezos-smart-rollup-mock = {path= "../kernel_sdk/mock"}
+tezos-smart-rollup-encoding = {path= "../kernel_sdk/encoding"}
+nom = "6.1"
+
+# To hash everything
+ed25519-compact = { version ="2.0", default-features = false }
+tezos_crypto_rs = { version = "0.4", default-features = false }
+
+serde = "1.0.152"
+serde-json-wasm = "0.5.0"
+serde_bytes = "0.11"
+num-bigint = "0.3"
+
+hex = "0.4.3"
+
+[dev-dependencies]
+insta = { version = "1.29.0", features = ["json"] }
+
+[profile.dev.package.insta]
+opt-level = 3
+
+[profile.dev.package.similar]
+opt-level = 3

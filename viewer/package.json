@@ -1,0 +1,26 @@
+{
+  "name": "viewer",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build && (cd dist && zip -r ../dist.zip .)",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.2",
+    "vite": "^4.3.2"
+  },
+  "dependencies": {
+    "blakejs": "^1.2.1",
+    "bs58check": "^3.0.1",
+    "buffer": "^6.0.3",
+    "cbor-web": "^9.0.0",
+    "events": "^3.3.0",
+    "pngjs": "^7.0.0",
+    "tweetnacl": "^1.0.3",
+    "vite-compatible-readable-stream": "^3.6.1",
+    "vite-plugin-singlefile": "^0.13.5"
+  }
+}

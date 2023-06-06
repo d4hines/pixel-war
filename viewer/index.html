@@ -1,0 +1,48 @@
+<head>
+	<title>Pixel War</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<meta name="description" content="An online pixel canvas inspired by r/place.">
+	<meta name="keywords" content="r/place, place, game, golang, canvas">
+</head>
+
+<body>
+	<canvas id="viewport-canvas" oncontextmenu="return false;"></canvas>
+	<div id="ui-wrapper">
+		<p id="loading-p"></p>
+		<div id="zoom-wrapper">
+			<button class="zoom-button" id="zoom-out">
+				-
+			</button>
+			<button class="zoom-button" id="zoom-in">
+				+
+			</button>
+		</div>
+	</div>
+	<button id="help-button" onclick="document.querySelector('#help-popup').style.visibility = 'visible';">
+		<p><strong>Help</strong></p>
+	</button>
+	<div id="player-popup">
+		<strong>Player under cursor:</strong>
+	    <p id="none">None</p>	
+	</div>
+	<div id="help-popup">
+		<div id="help-text-desktop">
+			<p>Press <strong>space</strong> to pause/continue the animation.</p><br>
+			<p>Use the mouse wheel or <strong>+</strong> and <strong>-</strong> buttons to zoom in.</p><br>
+			<p>Press <strong>space</strong> to pause/continue the animation.</p><br>
+			<p><strong>Hover</strong> anywhere on the canvas to reveal who placed the pixel under cursor.</p><br>
+		</div>
+		<div id="help-text-mobile">
+			<p><strong>Pinch</strong> to zoom or use the <strong>+</strong> and <strong>-</strong> buttons.</p><br>
+			<p><strong>Touch and drag</strong> to move the canvas.</p><br>
+			<p><strong>Touch and hold</strong> to pause/continue the animation.</p><br>
+     		<p><strong>Tap</strong> anywhere on the canvas to reveal who placed the pixel under cursor.</p><br>	
+		</div>
+		<button id="close-help-popup"
+			onclick="document.querySelector('#help-popup').style.visibility = 'hidden';"><strong>Close
+				me.</strong></button>
+	</div>
+  <script type="module" src="src/main.ts"></script>
+</body>
+
+</html>

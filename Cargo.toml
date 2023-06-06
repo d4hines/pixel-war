@@ -1,0 +1,27 @@
+[workspace]
+
+members = [
+    "crates/sequencer",
+    "crates/kernel",
+    "crates/lib",
+    "crates/upgrade-client",
+    "crates/signature-util",
+    "crates/sig-checker",
+    "crates/foo-tool",
+    "crates/image-fixer-upper",
+    "crates/tx-encoder",
+     # Kernel SDK
+     "crates/kernel_sdk/core",
+     "crates/kernel_sdk/host",
+     "crates/kernel_sdk/debug",
+     "crates/kernel_sdk/mock",
+     "crates/kernel_sdk/encoding",
+     "crates/kernel_sdk/storage",
+     "crates/kernel_sdk/panic-hook",
+     "crates/kernel_sdk/entrypoint",
+     "crates/kernel_sdk/sdk",
+     # Installer
+     "crates/kernel_sdk/installer-kernel",
+     "crates/kernel_sdk/installer-client",
+     "crates/kernel_sdk/installer-config", 
+]

@@ -1,0 +1,28 @@
+{
+  "name": "frontend3",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.2",
+    "vite": "^4.3.2"
+  },
+  "dependencies": {
+    "@airgap/beacon-sdk": "^4.0.2",
+    "@taquito/beacon-wallet": "^16.1.2",
+    "@taquito/signer": "^16.1.2",
+    "@taquito/taquito": "^16.1.2",
+    "@taquito/utils": "^16.1.2",
+    "blakejs": "^1.2.1",
+    "bs58check": "^3.0.1",
+    "buffer": "^6.0.3",
+    "events": "^3.3.0",
+    "tweetnacl": "^1.0.3",
+    "vite-compatible-readable-stream": "^3.6.1"
+  }
+}
